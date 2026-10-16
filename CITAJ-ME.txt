@@ -1,0 +1,14 @@
+AC SERVISER - APK PAKET
+
+1. Napravi besplatan nalog na github.com i klikni New repository (npr. ime: ac-serviser). Ostavi Public ili Private.
+2. Raspakuj ovaj ZIP na racunaru.
+3. U repozitorijumu: Add file > Upload files. Prevuci SVE iz raspakovanog foldera
+   (www, package.json, capacitor.config.json i folder .github). Klikni Commit changes.
+4. Otvori karticu Actions. Build APK pocinje sam (traje oko 5-8 min). Ako ne krene: Build APK > Run workflow.
+5. Kad bude zelena kvacica, otvori taj run i dole u "Artifacts" preuzmi ac-serviser-apk (ZIP sa app-debug.apk).
+6. Raspakuj, prebaci app-debug.apk na telefon, otvori ga i dozvoli "Instalaciju iz nepoznatih izvora".
+
+Ako se folder .github ne otpremi (skriven je): Add file > Create new file,
+upisi ime  .github/workflows/build.yml  i nalepi sadrzaj iz build-workflow-rezerva.yml.
+
+Napomena: ovo je debug APK za licnu upotrebu. Za Google Play treba potpisan release (.aab).
